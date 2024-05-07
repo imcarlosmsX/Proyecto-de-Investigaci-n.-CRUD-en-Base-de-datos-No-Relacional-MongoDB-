@@ -1,9 +1,9 @@
 from typing import Optional
 from pydantic import BaseModel
+from edition import Edicion
 
 
-class User(BaseModel):
+class Copia(BaseModel):
     _id: Optional[str]
-    name: str
-    email: str
-    password: str
+    numero: int
+    isbn: str
