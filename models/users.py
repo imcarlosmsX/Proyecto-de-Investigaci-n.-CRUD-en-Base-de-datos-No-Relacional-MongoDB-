@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
 class User(BaseModel):
-    RUT: str
+    rut: str
     nombre: str
     numero_copia: str
