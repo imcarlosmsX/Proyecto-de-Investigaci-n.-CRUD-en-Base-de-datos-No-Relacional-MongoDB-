@@ -2,5 +2,5 @@ from pydantic import BaseModel
 
 class User(BaseModel):
     RUT: str
-    name: str
-    loans: list
+    nombre: str
+    numero_copia: str

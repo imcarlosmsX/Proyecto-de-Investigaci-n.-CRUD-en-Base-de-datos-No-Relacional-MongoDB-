@@ -3,8 +3,8 @@ from pydantic import BaseModel
 from books import Libro
 
 class Edicion(BaseModel):
-    _id: Optional[str]
-    ISBN: str
-    ano: int
+    
+    isbn: str
+    year: str
     idioma: str
-    libro: Libro
+    titulo_libro: str

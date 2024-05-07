@@ -1,11 +1,11 @@
-from books import bookEntity
+
 
 def editionEntity(item) -> dict:
     return {
-        "ISBN": str(item["ISBN"]),
-        "ano": int(item["ano"]),
+        "isbn": str(item["isbn"]),
+        "year": int(item["year"]),
         "idioma": str(item["idioma"]),
-        "libro": bookEntity(item["libro"])
+        "titulo_libro": str(item["titulo_libro"]),
     }
 
 def editionsEntity(entity) -> list:

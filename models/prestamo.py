@@ -5,4 +5,5 @@ from edition import Edicion
 class Prestamo(BaseModel):
     fecha_prestamo: str
     fecha_devolucion: str
-    edicion: Edicion
+    rut: str
+    numero_copia: str

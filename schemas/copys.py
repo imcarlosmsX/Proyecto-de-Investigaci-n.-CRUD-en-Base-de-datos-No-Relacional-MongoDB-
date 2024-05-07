@@ -1,9 +1,9 @@
-from edition import editionEntity
 
 def copyEntity(item) -> dict:
     return {
-        "numero": int(item["numero"]),
-        "edicion": editionEntity(item["edicion"])
+        "numero_copia": int(item["numero_copia"]),
+        "isbn": str(item["isbn"]),
+        "rut": str(item["rut"]),
     }
 
 
