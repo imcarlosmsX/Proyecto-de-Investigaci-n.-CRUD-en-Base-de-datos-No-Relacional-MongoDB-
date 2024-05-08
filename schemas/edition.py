@@ -5,7 +5,6 @@ def editionEntity(item) -> dict:
         "isbn": str(item["isbn"]),
         "year": int(item["year"]),
         "idioma": str(item["idioma"]),
-        "titulo_libro": str(item["titulo_libro"]),
     }
 
 def editionsEntity(entity) -> list:

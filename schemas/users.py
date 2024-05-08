@@ -2,9 +2,8 @@
 
 def userEntity(item) -> dict:
     return {
-        "RUT": str(item["RUT"]),
+        "rut": str(item["rut"]),
         "nombre": str(item["nombre"]),
-        "numero_copia": str(item["numero_copia"]),
     }
 
 

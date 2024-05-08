@@ -7,3 +7,4 @@ class Prestamo(BaseModel):
     fecha_devolucion: str
     rut: str
     numero_copia: str
+    isbn: str

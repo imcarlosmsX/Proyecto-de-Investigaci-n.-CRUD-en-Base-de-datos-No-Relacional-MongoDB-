@@ -6,4 +6,3 @@ from edition import Edicion
 class Copia(BaseModel):
     numero_copia: str
     isbn: str
-    rut: str

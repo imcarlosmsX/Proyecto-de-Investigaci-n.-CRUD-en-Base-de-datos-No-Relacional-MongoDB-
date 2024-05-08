@@ -7,4 +7,3 @@ class Edicion(BaseModel):
     isbn: str
     year: str
     idioma: str
-    titulo_libro: str

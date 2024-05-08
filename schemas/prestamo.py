@@ -6,6 +6,7 @@ def loanEntity(item) -> dict:
         "fecha_devolucion": str(item["fecha_devolucion"]),
         "rut": str(item["rut"]),
         "numero_copia": str(item["numero_copia"]),
+        "isbn": str(item["isbn"]),
     }
 
 def loansEntity(entity) -> list:
