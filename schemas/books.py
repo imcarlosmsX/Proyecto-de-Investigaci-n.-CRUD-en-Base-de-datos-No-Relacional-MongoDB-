@@ -1,7 +1,7 @@
 def bookEntity(item) -> dict:
     return {
         
-        "titulo": str(item["titulo"]),
+        "titulo_libro": str(item["titulo_libro"]),
         "isbn": str(item["isbn"]),
     }
 

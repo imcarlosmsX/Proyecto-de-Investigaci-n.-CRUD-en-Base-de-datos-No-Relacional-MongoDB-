@@ -3,7 +3,6 @@ def copyEntity(item) -> dict:
     return {
         "numero_copia": int(item["numero_copia"]),
         "isbn": str(item["isbn"]),
-        "rut": str(item["rut"]),
     }
 
 

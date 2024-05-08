@@ -1,6 +1,5 @@
 from fastapi import APIRouter
 from config.db import conn
-from bson import ObjectId
 from models.users import User
 from schemas.users import userEntity
 

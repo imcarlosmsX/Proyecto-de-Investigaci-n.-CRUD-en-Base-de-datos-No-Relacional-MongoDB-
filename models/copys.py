@@ -1,6 +1,5 @@
 from typing import Optional
 from pydantic import BaseModel
-from edition import Edicion
 
 
 class Copia(BaseModel):
