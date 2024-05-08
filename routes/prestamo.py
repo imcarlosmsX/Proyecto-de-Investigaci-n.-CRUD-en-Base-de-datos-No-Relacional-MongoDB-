@@ -18,19 +18,8 @@ def create_prestamo(prestamo: Prestamo):
 #actualizar prestamo
 @loans.put('/updateprestamo/{rut, isbn, numero_copia}')
 def update_prestamo(rut: str, isbn: str, numero_copia: str, prestamo: Prestamo):
-    query = {'rut': rut, 'isbn': isbn, 'numero_copia': numero_copia}
-    update_fields = {'$set': dict(prestamo)}
-    
-    new_prestamo = conn.libreria.prestamo.find_one_and_update(
-        query,
-        update_fields,
-        return_document=ReturnDocument.AFTER
-    )
-    
-    if new_prestamo:
-        return str(loanEntity(new_prestamo))
-    else:
-        return "Prestamo no encontrado"
+    new_prestamo = conn.libreria.prestamo.find_one_and_update({'rut': rut, 'isbn': isbn, 'numero_copia': numero_copia}, {'$set': dict(prestamo)}, return_document=ReturnDocument.AFTER)
+    return str(loanEntity(new_prestamo))
 
 #eliminar prestamo
 @loans.delete('/deleteprestamo/{rut, isbn, numero_copia}')
