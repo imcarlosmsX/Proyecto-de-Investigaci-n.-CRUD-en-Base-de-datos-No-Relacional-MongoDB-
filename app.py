@@ -6,7 +6,7 @@ from routes.libro import libro
 from routes.edicion import edicion
 from routes.copia import copia
 from routes.prestamo import loans
-from routes.query1 import query
+from routes.querys import query
 
 
 app = FastAPI()
