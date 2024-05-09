@@ -1,7 +1,7 @@
-def aautoreaEntity(item) -> dict:
+def autoreaEntity(item) -> dict:
     return { 
-        "titulo_libro": str(item["titulo_libro"]),
-        "nombre_autor": str(item["nombre_autor"])}
+        "titulo_libro_autorea": str(item["titulo_libro_autorea"]),
+        "nombre_autor_autorea": str(item["nombre_autor_autorea"])}
 
 def aautoreasEntity(entity) -> list:
-    return[aautoreaEntity(item) for item in entity]
+    return[autoreaEntity(item) for item in entity]
