@@ -1,3 +1,3 @@
 from pymongo import MongoClient
 
-conn = MongoClient('mongodb://localhost:27017')
+conn = MongoClient('mongodb+srv://manuelmongo:manuelmongo@atlascluster.a9jxe6i.mongodb.net/')
