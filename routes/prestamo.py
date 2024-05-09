@@ -17,8 +17,8 @@ def create_prestamo(prestamo: Prestamo):
 
 #actualizar prestamo
 @loans.put('/updateprestamo/{rut, isbn, numero_copia}')
-def update_prestamo(rut: str, numero_copia: str, isbn: str, prestamo: Prestamo):
-    new_prestamo = conn.libreria.prestamo.find_one_and_update({'rut': rut, 'isbn': isbn, 'numero_copia': numero_copia}, {'$set': dict(prestamo)}, return_document=ReturnDocument.AFTER)
+def update_prestamo(rut_usuario: str, numero_copia_libro: str, isbn_editorial: str, prestamo: Prestamo):
+    new_prestamo = conn.libreria.prestamo.find_one_and_update({'rut': rut_usuario, 'isbn': isbn_editorial, 'numero_copia': numero_copia_libro}, {'$set': dict(prestamo)}, return_document=ReturnDocument.AFTER)
     return str(loanEntity(new_prestamo))
 
 #eliminar prestamo

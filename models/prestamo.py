@@ -3,9 +3,9 @@ from pydantic import BaseModel
 
 
 class Prestamo(BaseModel):
-    rut: str
-    numero_copia: str
-    isbn: str
+    rut_usuario: str
+    numero_copia_libro: str
+    isbn_editorial: str
     fecha_prestamo: str
     fecha_devolucion: str
     
