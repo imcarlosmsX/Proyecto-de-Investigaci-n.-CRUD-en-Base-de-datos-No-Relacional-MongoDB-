@@ -7,7 +7,7 @@ from pymongo import ReturnDocument
 libro = APIRouter()
 
 #crear libro
-@libro.post('/createlibreria')
+@libro.post('/createlibro')
 def create_libro(libro: Libro):
     new_libro = dict(libro)
     id = conn.libreria.libro.insert_one(new_libro).inserted_id
